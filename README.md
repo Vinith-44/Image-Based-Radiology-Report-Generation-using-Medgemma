@@ -65,20 +65,25 @@ The system trains and retrieves context from the following medical imaging datas
 ## Project Structure
 
 ```text
-RADAR/
-├── data/                   # (Ignored in git) JSON files, Parquet dataframes
-├── models/                 # Saved checkpoints (ramt_best_auc.pt)
-├── outputs/                # RAG audit trails, training dashboards
-├── rag_index_v3/           # Cached FAISS HNSW indices and embeddings
-├── src/
-│   ├── ghfe_module.py      # DenseNet-121 and Graph processing
-│   ├── ramt_module.py      # Mean Teacher training loop and Modality Preprocessing
-│   ├── radioshield_rag.py  # Multi-channel RAG, NLI guard, and Prompter
-│   └── medgemma_engine.py  # LLM inference logic
+Image-Based-Radiology-Report-Generation-using-Medgemma/
+├── data/
+│   └── Datasets.md          # Dataset download links
+├── models/
+│   └── Models.md            # Model weights download link (HuggingFace)
 ├── notebooks/
-│   └── radiology-image-based-report-generation.ipynb  # Main Kaggle/Colab pipeline
-├── requirements.txt
-└── README.md
+│   └── radiology-image-based-report-generation.ipynb
+├── outputs/
+│   └── report.pdf
+├── src/
+│   ├── ghfe_module.py
+│   ├── medgemma_engine.py
+│   ├── medgemma_report_generator.py
+│   ├── radioshield_rag.py
+│   └── ramt_module.py
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ---
