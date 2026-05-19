@@ -1,0 +1,51 @@
+# Core ML
+torch>=2.0
+torchvision>=0.15
+torchaudio>=2.0
+transformers>=4.40
+accelerate>=0.30
+bitsandbytes>=0.43
+
+# GPU Support
+nvidia-cuda-runtime-cu12
+nvidia-cudnn-cu12
+xformers>=0.0.26
+
+# GHFE / Visual Backbone
+opencv-python>=4.8
+Pillow>=10.0
+scikit-learn>=1.3
+scikit-image>=0.21
+
+# RAG Pipeline (RadioShield)
+sentence-transformers>=2.7
+faiss-cpu>=1.7
+rank_bm25>=0.2.2
+nltk>=3.8
+faiss-gpu>=1.7
+
+# Graph Neural Network (GCN)
+torch-geometric>=2.4
+torch-scatter>=2.1
+torch-sparse>=0.6
+
+# Data Processing
+polars>=0.20
+numpy>=1.24
+pandas>=2.0
+pyarrow>=14.0
+
+# Medical Imaging
+pydicom>=2.4
+nibabel>=5.1
+
+# Evaluation
+rouge-score>=0.1.2
+nltk>=3.8
+
+# Utilities
+tqdm>=4.66
+huggingface_hub>=0.22
+matplotlib>=3.7
+seaborn>=0.13
+tensorboard>=2.14
